@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">JobFinding</string>
+    <string name="join_now">Join now</string>
+    <string name="email">Email</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="you_agree_to_the_trt_privacy">you agree to the TRT privacy</string>
+    <string name="join_agree"><![CDATA[Join & Agree]]></string>
+    <string name="most_recent_job_title">Most recent job title</string>
+    <string name="employment_type">Employment Type</string>
+    <string name="most_recent_companey">Most recent companey</string>
+    <string name="next">Next</string>
+    <string name="degree">Degree</string>
+    <string name="start_year">Start year</string>
+    <string name="end_year">End year</string>
+    <string name="skip">Skip</string>
+    <string name="password">Password</string>
+    <string name="find_account">Find account</string>
+</resources>

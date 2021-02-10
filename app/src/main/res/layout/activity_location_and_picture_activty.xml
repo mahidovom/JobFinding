@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationAndPictureActivty">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Whats your location"
+        android:textSize="33dp"
+        android:textColor="#88020202"
+        android:layout_marginTop="40dp"
+        android:id="@+id/txtjob"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="See people,jobs,and news in your areas"
+        android:textSize="14dp"
+        android:textColor="#C6020202"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtf"
+        android:layout_below="@+id/txtjob"/>
+    <AutoCompleteTextView
+        android:id="@+id/edtlocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Country"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@+id/txtf"
+        android:ems="10"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imgceneter"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/next"
+        android:textColor="#fff"
+        android:textSize="23dp"
+        android:textAllCaps="false"
+        android:background="@drawable/buttonshapeblue"
+        android:id="@+id/btnloc"
+        android:onClick="btnloc"
+        tools:ignore="OnClick"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/btnSkip"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imgceneter"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/skip"
+        android:textColor="#000000"
+        android:textSize="23dp"
+        android:textAllCaps="false"
+        android:background="@drawable/bordershape"
+        android:id="@+id/btnSkip"
+        android:onClick="btnSkip"
+        tools:ignore="OnClick"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        />
+
+
+</RelativeLayout>

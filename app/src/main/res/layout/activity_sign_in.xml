@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:text="JOIN NOW"
+        android:textColor="#024665"
+        android:theme="@style/PrimaryFlatButton"
+        android:id="@+id/btnjoinnow"
+        android:onClick="btnjoinnow"
+        tools:ignore="OnClick" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="#094661"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputTextPhoneReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        app:boxBackgroundColor="@android:color/transparent"
+        android:background="@android:color/transparent"
+        >
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="@string/email"
+            android:ems="10"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inptpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        app:boxBackgroundColor="@android:color/transparent"
+        android:background="@android:color/transparent"
+        >
+
+        <EditText
+            android:id="@+id/edtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="@string/password"
+            android:ems="10"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORGOT PASSWORD?"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="18dp"
+        android:textColor="#024665"
+        android:theme="@style/PrimaryFlatButton"
+        android:onClick="btnForget"
+        android:id="@+id/btnForget"
+        tools:ignore="OnClick" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imgceneter"
+        android:layout_marginHorizontal="10dp"
+        android:text="Continue"
+        android:textColor="#fff"
+        android:textSize="23dp"
+        android:textAllCaps="false"
+        android:background="@drawable/buttonshapeblue"
+        android:id="@+id/btnsignin"
+        android:onClick="btnsignin"
+        tools:ignore="OnClick"
+        android:layout_marginTop="40dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnjoinnow"
+        android:layout_marginHorizontal="10dp"
+        android:text="Sign in with Google"
+        android:textColor="#85070707"
+        android:textSize="23dp"
+        android:layout_marginVertical="10dp"
+        android:textAllCaps="false"
+        android:background="@drawable/bordershape"
+        android:drawableLeft="@drawable/ic_search"
+        android:paddingHorizontal="40dp"
+        android:id="@+id/btnGSign"
+        android:onClick="btnGSign"
+        tools:ignore="OnClick" />
+    </LinearLayout>
+
+</RelativeLayout>

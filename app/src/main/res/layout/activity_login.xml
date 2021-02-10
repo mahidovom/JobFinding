@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_above="@+id/img"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/loginwall"/>
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/imgceneter"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imgceneter"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/join_now"
+        android:textColor="#fff"
+        android:textSize="23dp"
+        android:textAllCaps="false"
+        android:background="@drawable/buttonshapeblue"
+        android:id="@+id/btnjoinnow"
+        android:onClick="btnjoinnow"
+        tools:ignore="OnClick" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnjoinnow"
+        android:layout_marginHorizontal="20dp"
+        android:text="Join with Google"
+        android:textColor="#85070707"
+        android:textSize="23dp"
+        android:layout_marginVertical="20dp"
+        android:textAllCaps="false"
+        android:background="@drawable/bordershape"
+        android:drawableLeft="@drawable/ic_search"
+        android:paddingHorizontal="40dp"
+        android:id="@+id/btnGJoin"
+        android:onClick="btnGJoin"
+        tools:ignore="OnClick" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnGJoin"
+        android:layout_marginHorizontal="20dp"
+        android:text="Sign in"
+        android:textColor="#85070707"
+        android:textSize="23dp"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="false"
+        android:background="@drawable/bordershape"
+        android:paddingHorizontal="40dp"
+        android:id="@+id/btnsignin"
+        android:onClick="btnsignin"
+        tools:ignore="OnClick" />
+
+
+
+</LinearLayout>
